@@ -1,18 +1,21 @@
 import React from 'react';
 import { FaClock } from 'react-icons/fa';
 import { BiAlarm } from "react-icons/bi";
- // Importa el icono de reloj
+import { Link } from 'react-router-dom';
+
 
 const Sidebar = () => {
   return (
     <div style={styles.sidebar}>
       <div style={styles.iconContainer}>
+      <Link to="/reloj-timer">
         <FaClock style={styles.icon} />
-        <span>Clock 1</span>
+        <span>Reloj</span>
+        </Link>
       </div>
       <div style={styles.iconContainer}>
         <BiAlarm style={styles.icon} />
-        <span>Clock 2</span>
+        <span>Cronometro</span>
       </div>
     </div>
   );

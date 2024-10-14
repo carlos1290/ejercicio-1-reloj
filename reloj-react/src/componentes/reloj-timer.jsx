@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function hora () {
+function RelojTimer () {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -19,4 +19,4 @@ function hora () {
   );
 }
 
-export default hora;
+export default RelojTimer;

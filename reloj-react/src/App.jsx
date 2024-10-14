@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RelojTimer from './componentes/reloj-timer';
+import RelojHora  from "./componentes/reloj-hora"
 import Sidebar from './componentes/Footer';
 function App() {
 
 
   return (
     <>
+    
+    /<Router>
     <Sidebar/>
+        <Routes>
+          <Route path="/reloj-timer" element={<RelojTimer />} />
+          <Route path="/reloj-hora" element={<RelojHora />} />
+        </Routes>
+      
+    </Router>
     </>
   )
 }
